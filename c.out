@@ -1,0 +1,4 @@
+mode: set
+exemplo/testes/soma.go:5.29,6.11 1 1
+exemplo/testes/soma.go:9.2,9.14 1 0
+exemplo/testes/soma.go:6.11,8.3 1 1

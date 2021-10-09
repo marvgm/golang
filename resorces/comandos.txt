@@ -1,0 +1,30 @@
+--rodar app
+go run server/main.go
+
+--gera executavel para os
+go build server/main.go
+
+GOOS=windows go build server/main.go
+
+--roda testes
+
+go test ./...
+
+go test -cover ./...
+
+--verfica a velocidade das operacoes de teste
+cd testes
+go test -bench=. ./...
+
+--gera arquivo com testes não cobertos e ve em html
+go test -cover -coverprofile=c.out ./...
+go tool cover -html=c.out -o coverege.html
+
+--criar mods: cria arquivo .mod para documentacao
+
+go mod init exemplo
+
+godoc -http=localhost:6060
+
+ou godoc -play -http=localhost:6060
+

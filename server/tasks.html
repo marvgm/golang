@@ -1,0 +1,13 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Tasks</title>
+</head>
+<h1>Tasks</h1>
+
+<ul>
+    {{range .}}
+    <li>{{.Name}} - {{if .Done}}Done{{else}}Open{{end}}</li>
+    {{end}}
+</ul>
+</body>
+</html>
